@@ -12,7 +12,16 @@ require 'bike'
 		nagamura = Bike.new
 		old_street = DockingStation.new
 		old_street.dock(nagamura)
-		expect(old_street.bikes).to eq (nagamura)
+		expect(old_street.bikes).to eq [nagamura]
+	end
+
+	it 'can undock a bike' do
+
+	end
+
+	it 'knows when there is a bike docked' do
+		old_street = DockingStation.new
+
 	end
 
 
