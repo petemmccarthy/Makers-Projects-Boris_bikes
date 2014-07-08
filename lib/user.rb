@@ -1,19 +1,5 @@
 class User
-	attr_reader :bike
-
-
-	# reader 
-	def bike
-		puts "im a reader"
-		@bike
-	end
-
-	# writer
-	def bike=(value)
-		puts "im a writer"
-		@bike = value
-	end
-
+	attr_accessor :bike
 
 	def initialize(bok = nil)
 		@bike = bok if bok
@@ -28,15 +14,10 @@ class User
 	end
 
 	def rent_bike_from(station)
-		cycle = station.release(station.available_bikes.first)
-		self.bike=cycle
+		self.bike = station.release(station.available_bikes.first)
 	end
 
 end
-
-	# accessor 
-	# both
-
 
 
 
