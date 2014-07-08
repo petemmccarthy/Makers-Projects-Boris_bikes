@@ -32,11 +32,48 @@ class User
 		self.bike=cycle
 	end
 
-
-
+end
 
 	# accessor 
 	# both
 
 
-end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from enrique
+
+	# def rent_bike_from(docking_station)
+	# 	docking_station.release_bike
+	
+	# end
+
+
+	
+
+

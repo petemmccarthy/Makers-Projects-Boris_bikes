@@ -33,3 +33,64 @@ describe 'user' do
 	# end
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from enrique
+
+
+
+# it 'can rent a bike from docking station' do
+# 	station = double :docking_station
+# 	person = Person.new
+# 	expect(station).to receive(:release_bike)
+# 	person.rent_bike_from(station)
+# 	end
+
+# it 'has a bike once it rents one from station' do
+# 	station = double :docking_station, release_bike: :bike
+# 	# this is a hash and return value from hash
+
+# 	#allow(station).to receive release_bike.....is the same
+
+# 	person = Person
+
+# 	person.rent_bike_from
+# 	expect(person).to have_bike
+
+# end
+
+
+
+
