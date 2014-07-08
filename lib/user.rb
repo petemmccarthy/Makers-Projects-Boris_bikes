@@ -17,6 +17,11 @@ class User
 		self.bike = station.release(station.available_bikes.first)
 	end
 
+	def return_bike_to(old_street)
+		old_street.dock(self.bike)
+		self.bike = nil
+	end
+
 end
 
 

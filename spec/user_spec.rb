@@ -29,8 +29,11 @@ describe 'user' do
 		expect(user.has_bike?).to eq true
 	end
 
-	# it 'can return a bike to docking station' do
-	# end
+	it 'can return the bike' do
+		old_street = DockingStation.new
+		bikeman.return_bike_to(old_street)
+		expect(bikeman).not_to have_bike
+	end
 
 end
 
