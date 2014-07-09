@@ -8,7 +8,7 @@ require 'bike'
 		it 'should not be broken when created' do
 			# nagamura = Bike.new 		# instantiating the class
 			expect(nagamura.broken?).to be false
-	end
+		end
 
 		it ' can be broken' do
 			# nagamura = Bike.new
