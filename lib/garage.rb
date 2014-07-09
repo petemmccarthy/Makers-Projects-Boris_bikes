@@ -1,5 +1,4 @@
 require_relative 'bike_container'
-require 'bike'
 
 class Garage
 
@@ -8,5 +7,10 @@ class Garage
 	def receives_only_broken_bikes(bike)
 		bikes.select { |bike| bike.broken? }
 		dock(bike)
+	end
+
+	def fixes_broken_bike(bike)
+	 	bike.fix!
+
 	end
 end
