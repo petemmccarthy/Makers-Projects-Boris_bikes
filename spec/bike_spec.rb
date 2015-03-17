@@ -6,12 +6,10 @@ require 'bike'
 		let (:broken_bike) { Bike.new.break! }
 
 		it 'should not be broken when created' do
-			# nagamura = Bike.new 		# instantiating the class
 			expect(nagamura.broken?).to be false
 		end
 
 		it ' can be broken' do
-			# nagamura = Bike.new
 			nagamura.break!
 			expect(nagamura.broken?).to be true
 		end

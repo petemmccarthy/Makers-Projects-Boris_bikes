@@ -20,7 +20,6 @@ describe Garage do
 	it 'can receive only broken bikes' do
 		expect(depot.bike_count).to eq (0)
 		depot.receives_only_broken_bikes(broken_bike)
-		# depot.receives_only_broken_bikes(trek) 
 		expect(depot.bikes).to include(broken_bike)
 	end
 

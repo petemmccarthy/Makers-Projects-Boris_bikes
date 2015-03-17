@@ -33,7 +33,7 @@ module BikeContainer
 	end
 
 	def capacity
-		@capacity
+		@capacity ||= DEFAULT_CAPACITY
 	end
 
 	def available_bikes
