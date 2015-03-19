@@ -9,7 +9,7 @@ class Garage
 		dock(bike)
 	end
 
-	def fixes_broken_bike(bike)
+	def fix_broken_bike(bike)
 	 	bike.fix!
 	end
 

@@ -3,8 +3,8 @@ require 'bike'
 
 describe BikeContainer do
 
-	let(:trek)				{Bike.new}
-	let(:old_street)	{DockingStation.new}
+	let(:trek)				{ Bike.new }
+	let(:old_street)	{ DockingStation.new }
 
 	it 'has no bikes when created' do
 		expect(old_street.bikes.count).to eq 0

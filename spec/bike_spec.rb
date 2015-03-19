@@ -9,7 +9,7 @@ describe Bike do
 		expect(nagamura.broken?).to be false
 	end
 
-	it ' can be broken' do
+	it 'can be broken' do
 		nagamura.break!
 		expect(nagamura.broken?).to be true
 	end
