@@ -2,8 +2,8 @@ class User
 
 	attr_accessor :bike
 
-	def initialize(bok = nil)
-		@bike = bok if bok
+	def initialize(bike = nil)
+		@bike = bike
 	end
 
 	def has_bike?
@@ -14,12 +14,12 @@ class User
 		bike.break!
 	end
 
-	def rent_bike_from(station)
-		self.bike = station.release(station.available_bikes.first)
+	def rent_bike_from(docking_station)
+		self.bike = docking_station.release(docking_station.available_bikes.first)
 	end
 
-	def return_bike_to(old_street)
-		old_street.dock(self.bike)
+	def return_bike_to(docking_station)
+		docking_station.dock(self.bike)
 		self.bike = nil
 	end
 

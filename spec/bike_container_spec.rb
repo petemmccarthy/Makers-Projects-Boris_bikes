@@ -3,7 +3,7 @@ require 'bike'
 
 describe BikeContainer do
 
-	let(:trek)				{ Bike.new }
+	let(:scott)				{ Bike.new }
 	let(:old_street)	{ DockingStation.new }
 
 	it 'has no bikes when created' do
@@ -11,12 +11,12 @@ describe BikeContainer do
 	end
 
 	it 'can dock a bike' do
-		old_street.dock(trek)
-		expect(old_street.bikes).to eq [trek]
+		old_street.dock(scott)
+		expect(old_street.bikes).to eq [scott]
 	end
 
 	it 'knows when there is a bike docked' do
-		old_street.dock(trek)
+		old_street.dock(scott)
 		expect(old_street.empty?).to be false
 	end
 
@@ -26,14 +26,14 @@ describe BikeContainer do
 
 	it 'knows how many bikes it has' do
 		expect(old_street.bike_count).to eq (0)
-		old_street.dock(trek)
+		old_street.dock(scott)
 		expect(old_street.bike_count).to eq (1)
 	end
 
 	it 'can release a bike' do
-		old_street.dock(trek)
+		old_street.dock(scott)
 		expect(old_street.bike_count).to eq 1
-		old_street.release(trek)
+		old_street.release(scott)
 		expect(old_street.bike_count).to eq 0
 	end
 
@@ -60,9 +60,9 @@ describe BikeContainer do
 	it 'knows if there are available bikes' do
 		fuji = Bike.new
 		fuji.break!
-		old_street.dock(trek)
+		old_street.dock(scott)
 		old_street.dock(fuji)
-		expect(old_street.available_bikes).to eq [trek]
+		expect(old_street.available_bikes).to eq [scott]
 	end
 
 end

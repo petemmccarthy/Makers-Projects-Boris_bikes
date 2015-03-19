@@ -10,8 +10,7 @@ describe DockingStation do
 	end
 
 	it 'should have a default capacity of 10' do
-		shoreditch = DockingStation.new
-		expect(shoreditch.capacity).to eq 10
+		expect(old_street.capacity).to eq 10
 	end
 
 	it 'should be able to create any capacity docking station' do
