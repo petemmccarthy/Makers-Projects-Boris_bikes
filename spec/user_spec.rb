@@ -4,9 +4,9 @@ require 'docking_station'
 
 describe 'user' do
 
-	let(:user) {User.new}
-	let(:bike) {Bike.new}
-	let(:bikeman) { User.new(bike) }
+	let(:user)		{User.new}
+	let(:bike)		{Bike.new}
+	let(:bikeman)	{ User.new(bike) }
 
 	it 'should not have a bike when created' do
 		expect(user.has_bike?).to be false 

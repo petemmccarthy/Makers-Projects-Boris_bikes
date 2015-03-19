@@ -11,6 +11,6 @@ class Garage
 
 	def fixes_broken_bike(bike)
 	 	bike.fix!
-
 	end
+
 end

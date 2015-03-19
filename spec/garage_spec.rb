@@ -3,9 +3,9 @@ require 'bike'
 
 describe Garage do
 
-	let(:depot) {Garage.new}
-	let(:trek) {Bike.new}
-	let(:broken_bike) {Bike.new.break!}
+	let(:depot)				{Garage.new}
+	let(:trek)				{Bike.new}
+	let(:broken_bike)	{Bike.new.break!}
 
 	it 'has no bikes when created' do
 		expect(depot.bike_count).to eq (0)
@@ -33,4 +33,5 @@ describe Garage do
 	 	depot.release
 	 	expect(depot.bike_count).to eq (0)
 	end
+
 end

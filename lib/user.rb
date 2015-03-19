@@ -1,4 +1,5 @@
 class User
+
 	attr_accessor :bike
 
 	def initialize(bok = nil)
@@ -23,4 +24,3 @@ class User
 	end
 
 end
-
