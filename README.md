@@ -1,15 +1,19 @@
 [![Code Climate](https://codeclimate.com/github/petemmccarthy/Makers-Projects-Boris_bikes/badges/gpa.svg)](https://codeclimate.com/github/petemmccarthy/Makers-Projects-Boris_bikes) [![Test Coverage](https://codeclimate.com/github/petemmccarthy/Makers-Projects-Boris_bikes/badges/coverage.svg)](https://codeclimate.com/github/petemmccarthy/Makers-Projects-Boris_bikes)
 
 ##### Boris Bikes
-Program to model the 'Boris Bikes' bike rental system in London.
+
+A test-driven Ruby application modelling London's Boris Bike network.
+
+- Docking stations can hold bikes available for rent 
+- Users can rent from and return bikes to docking stations
+- Users can also return broken bikes to docking stations
+- Broken bikes can be taken to a garage to be fixed
+- Vans collect broken bikes from the docking station, take them to a garage to be fixed and take fixed bikes back to docking stations
 
 ##### Technologies and methods used:
 
 - Ruby
 - Tested using Rspec
-
-
-#### (STATUS - Work In Progress - but watch this space!)
 
 ##### Instructions to run
 
